@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color:  #3D63E9;
+}
+
+.background-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box{
+    height: 85vh;
+    width: 62vw;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.search-results{
+    padding: 44px 200px;
+    display: flex;
+    gap: 22px;
+}
+
+.country-name{
+    width: 34vw;
+    height: 2vh;
+    padding: 21px;
+    font-size: 2.5vh;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #3D63E9;
+}
+
+.search-btn{
+    height: 5vh;
+    width: 8vw;
+    background-color: #3D63E9;
+    color: white;
+    border: 2px solid #3D63E9;
+    border-radius: 20px;
+    font-size: 2.3vh;
+    transition: 0.5s;
+}
+
+.search-btn:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.country-details{
+    padding: 44px 20px;
+    transition: 0.5s;
+}
+
+.d-country{
+    display: flex;
+    align-items: center;
+    font-size: 4vh;
+    margin-top: 12px;
+}
+
+#d-text{
+    font-size: 4.2vh;
+    color: #3D63E9;
+    margin-right: 6px;
+}
+
+.error-text{
+    position: relative;
+}
+
+.h3-error{
+    position: absolute;
+    bottom: 14px;
+    left: 26vh;
+    font-size: 2.6vh;
+    color: crimson;
+    transition: 0.5s;
+}
+
+@media (max-width:767px) {
+    .main-box{
+        height: 80vh;
+        width: 100vw;
+    }
+
+    .search-results {
+        padding: 44px 15px;
+    }
+
+    .country-name {
+        width: 65vw;
+    }
+
+    .search-btn {
+        height: 5vh;
+        width: 20vw;
+        font-size: 2vh;
+    }
+
+    .img{
+        margin-right: 30px;
+    }
+    
+    #show-img{
+        height: 22vh;
+
+    }
+
+    .d-country{
+        font-size: 3vh;
+    }
+
+    #d-text {
+        font-size: 3.5vh;
+    }
+
+    .country-details{
+        padding: 44px 12px;
+    }
+
+    .h3-error{
+        left: 23px;
+    }
+    
+}
